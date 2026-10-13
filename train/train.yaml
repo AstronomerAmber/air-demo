@@ -43,9 +43,9 @@ code_source:
     root_path: .
 
 # Workspace folder holding the experiment (created if missing), so runs land in
-# /Users/ben.doan@databricks.com/qwen35_4b_sft_training. The runner notebook
+# /Users/amber.roberts@databricks.com/qwen35_4b_sft_training. The runner notebook
 # resolves the same path. Remove to use the submitting user's home folder.
-mlflow_experiment_directory: /Workspace/Users/ben.doan@databricks.com
+mlflow_experiment_directory: /Workspace/Users/amber.roberts@databricks.com
 
 # Fail fast. The default is 3 retries, each a fresh workload and a new MLflow
 # run; raise it (--override max_retries=2) for long unattended runs.
@@ -67,8 +67,8 @@ parameters:
     # must match setup.yaml's sft_volume.
     sft_volume: training_data
     checkpoint_volume: checkpoints
-    uc_model_name: qwen35_4b_finetuned
-    endpoint_name: qwen35_4b_finetuned_lora
+    uc_model_name: qwen35_4b_finetuned_amber
+    endpoint_name: qwen35_4b_finetuned_lora_amber
 
     model_name: Qwen/Qwen3.5-4B
     max_seq_length: 2048

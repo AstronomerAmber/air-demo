@@ -635,7 +635,7 @@ from databricks.sdk.service.serving import ChatMessage, ChatMessageRole
 w = WorkspaceClient()
 
 response = w.serving_endpoints.query(
-    name="qwen35_4b_finetuned_lora",
+    name=ENDPOINT_NAME,
     messages=[
         ChatMessage(
             role=ChatMessageRole.USER,

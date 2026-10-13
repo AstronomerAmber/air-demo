@@ -1,7 +1,7 @@
 catalog: ssa_team_sandbox_classic_catalog
 schema: air
 sft_table: fraud_sft_dataset
-endpoint_name: qwen35_4b_finetuned_lora
+endpoint_name: qwen35_4b_finetuned_lora_amber
 results_table: serving_load_test_results
 
 target_qps: 1000
