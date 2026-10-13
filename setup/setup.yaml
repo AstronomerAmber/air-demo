@@ -9,7 +9,7 @@ source_url: https://github.com/IBM/TabFormer/raw/main/data/credit_card/transacti
 archive_filename: transactions.tgz
 force_download: false
 suspicious_amount_threshold: 500.0
-sft_shards: 128
+sft_shards: 512
 
 # Base model weights mirrored from Hugging Face into a Unity Catalog volume by
 # 02_load_model_weights_to_volume.py. `model_name` must stay equal to
