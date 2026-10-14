@@ -13,11 +13,12 @@
 # letters, digits, - and _ only, at most 100 characters.
 experiment_name: qwen35_4b_sft_training
 
-# 64 8xH100 nodes (num_accelerators / 8 = node count). Validate cheaply first with
+# Eight 8xH100 nodes, this workspace's node quota (num_accelerators / 8 = node
+# count). Validate cheaply first with
 #   --override compute.accelerator_type=GPU_1xA10 --override compute.num_accelerators=1
 compute:
   accelerator_type: GPU_8xH100
-  num_accelerators: 512
+  num_accelerators: 64
 
 # Runs once per node. torchrun starts one DDP process per GPU; a single process
 # holding every GPU would fall back to nn.DataParallel, which Qwen3.5's Gated
